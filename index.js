@@ -1,8 +1,9 @@
 var katzDeli = []
-
-function takeANumber(current, name) {
-  current.push(name)
-  return `Welcome, ${name}. You are number ${current.length} in line.`
+var currentNumber = 0;
+function takeANumber(current) {
+  currentNumber++
+  return `Welcome, You are number `+ currentNumber + `in line.`
+  
 }
 
 function nowServing(line){
